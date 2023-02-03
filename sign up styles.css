@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background-image: url(PS5.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 30px 5px 30px;
+    box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.2);
+}
+.form header{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.form form{
+    margin: 40px;
+
+}
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+form .field .input-area{
+    position: relative;
+
+}
+form input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    padding-left: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #34495e;
+    border-bottom-width: 2px;
+}
+form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+
+}
+form .field i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translate(-50%);
+}
+form .field .icon{
+    left: 15px;
+    color: #34495e;
+}
+form.radio_btn{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-weight: 400;
+}
+form input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+form input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    background: #34495e;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+form input[type="submit"]:hover{
+    background: #333867;
+    
+}
